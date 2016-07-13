@@ -1,0 +1,39 @@
+{
+  "author": {
+    "name": "David Bouman"
+  },
+  "bugs": {
+    "url": "https://github.com/marviq/coffeelint-config-marviq/issues"
+  },
+  "dependencies": {},
+  "description": "Marviq's shareable coffeelint config baseline.",
+  "devDependencies": {
+    "standard-version": "^2.3.1"
+  },
+  "files": [
+    "AUTHORS",
+    "LICENSE",
+    "README.md",
+    "dist"
+  ],
+  "homepage": "https://github.com/marviq/coffeelint-config-marviq#readme",
+  "keywords": [
+    "coffeelint",
+    "coffeelintconfig",
+    "coffeescript",
+    "marviq"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "src/index.coffee",
+  "name": "coffeelint-config-marviq",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marviq/coffeelint-config-marviq.git"
+  },
+  "scripts": {
+    "release": "standard-version",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.0"
+}
