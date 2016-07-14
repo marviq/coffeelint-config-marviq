@@ -1,6 +1,6 @@
 # coffeelint-config-marviq
 
-A shareable coffeelint config baseline.
+Marviq's shareable coffeelint config baseline.
 
 
 ## Contributing
