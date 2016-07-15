@@ -14,7 +14,7 @@
     "AUTHORS",
     "LICENSE",
     "README.md",
-    "dist"
+    "src"
   ],
   "homepage": "https://github.com/marviq/coffeelint-config-marviq#readme",
   "keywords": [
@@ -38,5 +38,5 @@
     "release": "standard-version",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
