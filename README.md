@@ -1,6 +1,6 @@
 # coffeelint-config-marviq
 
-A shareable coffeelint config baseline.
+Marviq's shareable coffeelint config baseline.
 
 
 ## Contributing
@@ -49,7 +49,7 @@ $ git config commit.template ./.gitmessage
   $ git flow release start "v${version}"
   ```
 
-* Bump the package's `version`, update the CHANGELOG, and commit these:
+* Bump the package's `.version`, update the [CHANGELOG](./CHANGELOG.md), commit these, and tag the commit as `v<version>`:
   ```bash
   $ npm run release
   ```
@@ -64,17 +64,15 @@ $ git config commit.template ./.gitmessage
 
 * Merge `release/v<version>` back into both `develop` and `master`:
   ```bash
-  $ git flow release finish "v${version}"
+  $ git flow release finish -n "v${version}"
   ```
 
-* When it comes to tagging a release, `conventional-changelog/standard-version` and `git flow` do not play well together, unfortunately.  
-  The `npm run release` command will already have tagged the commit it made, as `v<version>`.  
-  Therefore, the `git flow release finish "v${version}"` command will claim to have tagged its merge commit into `master`, as `v<version>`, but really it 
-  didn't.  
-  This needs to be fixed, because tagging *is* `git flow`'s job:
-  ```bash
-  $ git tag -f "v${version}" master
-  ```
+  Note that contrary to vanilla git flow, the merge commit into `master` will *not* have been tagged (that's what the
+  [`-n`](https://github.com/nvie/gitflow/wiki/Command-Line-Arguments#git-flow-release-finish--fsumpkn-version) was for). This is done because `npm run release`
+  has already tagged its own commit.
+
+  I believe that in practice, this won't make a difference for the use of git flow; and doing it the other way round would render the use of
+  conventional-changelog impossible.
 
 Done.
 
