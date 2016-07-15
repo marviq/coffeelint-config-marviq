@@ -26,6 +26,9 @@
   "license": "BSD-3-Clause",
   "main": "src/index.coffee",
   "name": "coffeelint-config-marviq",
+  "peerDependencies": {
+    "coffeelint": ">=1.13"
+  },
   "private": false,
   "repository": {
     "type": "git",
