@@ -14,7 +14,7 @@
     "AUTHORS",
     "LICENSE",
     "README.md",
-    "dist"
+    "src"
   ],
   "homepage": "https://github.com/marviq/coffeelint-config-marviq#readme",
   "keywords": [
