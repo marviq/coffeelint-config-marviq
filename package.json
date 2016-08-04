@@ -30,6 +30,9 @@
     "coffeelint": ">=1.13"
   },
   "private": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marviq/coffeelint-config-marviq.git"
